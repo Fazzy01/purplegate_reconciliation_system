@@ -1,0 +1,5 @@
+**/node_modules/
+**/.env
+**/.env.*
+./pgtl_fe/node_modules/
+./recon_be/node_modules/
