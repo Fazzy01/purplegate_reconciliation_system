@@ -93,7 +93,7 @@ export default function LargeFileUploader({
     e.stopPropagation()
   }
 
-  // Start the upload process
+  // UPLOAD--> Start the upload process
   const startUpload = useCallback(async () => {
     if (!file) {
       toast.error("Please select a file first")

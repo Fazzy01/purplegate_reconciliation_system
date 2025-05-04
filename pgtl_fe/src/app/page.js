@@ -66,7 +66,7 @@ export default function Home() {
       clearInterval(progressIntervalRef.current)
     }
 
-    // Set up polling interval (every 2 seconds)
+    // Set up polling interval (every 2 seconds) to confirm reconciliation process
     progressIntervalRef.current = setInterval(async () => {
       try {
         const response = await fetch(`${API_BASE_URL}/api/reconcile/status/${id}`)

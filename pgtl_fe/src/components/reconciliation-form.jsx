@@ -18,7 +18,7 @@ export default function ReconciliationForm({ onStartReconciliation }) {
 
   const API_BASE_URL = process.env.NEXT_PUBLIC_LOCAL_BASE_URL || 'http://localhost:3000'
 
-  // Handle file upload completion
+  // UPLOAD--> Handle file upload completion
   const handleUploadComplete = (system, fileId, file) => {
     if (system === "A") {
       setFileIdA(fileId)
@@ -37,7 +37,7 @@ export default function ReconciliationForm({ onStartReconciliation }) {
     setIsUploading(false)
   }
 
-  // Start the reconciliation process
+  // RECONCILIATION--> Start the reconciliation process
   const startReconciliation = async () => {
     console.log("fileIdA: ", fileIdA)
     console.log("fileIdB: ", fileIdB)
